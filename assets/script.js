@@ -1,33 +1,55 @@
-/* =====================================
-Texto que será digitado
-===================================== */
+const terminal = document.getElementById("digitando-terminal");
 
-const texto = "Desenvolvedor Web Júnior | Full Stack em formação";
+const linhas = [
+  {
+    texto: "Marcos Vinicius Carreiro da Silva",
+    classe: "nome-destaque"
+  },
+  {
+    texto: "Desenvolvedor Web Júnior | Full Stack em formação",
+    classe: "cargo-destaque"
+  },
+  {
+    texto: "Estudante do curso Técnico em Informática para Internet pelo Senac, com foco em desenvolvimento web, banco de dados, APIs e aplicações mobile. Em transição para a área de desenvolvimento, construindo projetos reais e fortalecendo a base técnica para atuar como desenvolvedor júnior.",
+    classe: ""
+  }
+];
 
-/* elemento onde o texto aparece */
+let linhaAtual = 0;
+let letraAtual = 0;
 
-const alvo = document.getElementById("digitando");
+function digitarLinha() {
 
-/* contador */
+  if (linhaAtual >= linhas.length) return;
 
-let i = 0;
+  let linha = linhas[linhaAtual];
 
-/* função que faz digitação */
+  if (letraAtual === 0) {
+    const elemento = document.createElement("div");
+    elemento.className = linha.classe + " cursor";
+    terminal.appendChild(elemento);
+  }
 
-function digitar() {
+  const elementoAtual = terminal.lastChild;
 
-if (i < texto.length) {
+  if (letraAtual < linha.texto.length) {
 
-alvo.innerHTML += texto.charAt(i);
+    elementoAtual.textContent += linha.texto.charAt(letraAtual);
 
-i++;
+    letraAtual++;
 
-setTimeout(digitar, 50);
+    setTimeout(digitarLinha, 35);
 
+  } else {
+
+    elementoAtual.classList.remove("cursor");
+
+    linhaAtual++;
+    letraAtual = 0;
+
+    setTimeout(digitarLinha, 400);
+
+  }
 }
 
-}
-
-/* inicia efeito */
-
-digitar();
+digitarLinha();

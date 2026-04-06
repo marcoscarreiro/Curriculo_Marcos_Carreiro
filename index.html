@@ -1,327 +1,346 @@
 <!DOCTYPE html>
-<!-- Define que o documento usa HTML5 -->
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <!-- Permite acentos e caracteres especiais -->
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Faz o site se adaptar ao celular -->
-
-  <title>Marcos Carreiro | Desenvolvedor Web Júnior</title>
-
-  <!-- Conecta o arquivo CSS externo -->
-  <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marcos Carreiro | Developer Console</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-
-  <!-- =========================================================
-       FUNDO COM TECNOLOGIAS FLUTUANDO
-       Essas divs ficam atrás do conteúdo, só como efeito visual
-       ========================================================= -->
-  <div class="background-tech" aria-hidden="true">
-    <span>&lt;HTML&gt;</span>
-    <span>&lt;CSS&gt;</span>
-    <span>&lt;JavaScript&gt;</span>
-    <span>&lt;PHP&gt;</span>
+  <!-- FUNDO -->
+  <div class="space-grid" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+  <div class="floating-tech" aria-hidden="true">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>PHP</span>
     <span>MySQL</span>
     <span>Flutter</span>
+    <span>Git</span>
     <span>GitHub</span>
-    <span>API</span>
-    <span>Design Responsivo</span>
-    <span>Web</span>
-    <span>Full Stack</span>
+    <span>REST API</span>
+    <span>Responsive Design</span>
   </div>
 
-  <!-- =========================================================
-       CABEÇALHO / MENU
-       ========================================================= -->
-  <header class="header">
-    <div class="container nav">
-      <h1 class="logo">MarcosCarreiro.dev</h1>
+  <!-- TOPO -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#inicio" class="brand">
+        <span class="brand-badge">MC</span>
+        <span>Developer Console</span>
+      </a>
 
-      <nav>
-        <ul class="menu">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#tecnologias">Tecnologias</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#experiencia">Experiência</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+      <ul class="menu">
+        <li><a href="#sobre">Perfil</a></li>
+        <li><a href="#tecnologias">Tecnologias</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </div>
   </header>
 
-  <!-- =========================================================
-       HERO / APRESENTAÇÃO INICIAL
-       ========================================================= -->
-  <section class="hero">
-    <div class="container hero-content">
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-shell">
+      <div class="console">
+        <div class="console-lines">
+          <span class="line-orange"></span>
+          <span class="line-yellow"></span>
+          <span class="line-cyan"></span>
+        </div>
 
-      <p class="tag-top">Disponível para oportunidades na área de desenvolvimento</p>
-
-      <h2 class="hero-title">Marcos Vinicius Carreiro da Silva</h2>
-
-      <p class="hero-subtitle">
-        Desenvolvedor Web Júnior | Full Stack em formação
-      </p>
-
-      <p class="hero-text">
-        Estudante de Técnico em Informática para Internet pelo Senac, com foco em
-        desenvolvimento web utilizando HTML5, CSS3, JavaScript, PHP e MySQL.
-        Em transição para a área de tecnologia, construindo projetos reais e fortalecendo
-        minha base em front-end, back-end, APIs e banco de dados.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-        <a href="#contato" class="btn btn-secondary">Entrar em contato</a>
+        <div class="status">Status: Open to Work</div>
+        <div id="digitando-terminal"></div>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+          <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+        </div>
       </div>
+
+      <aside class="console-side">
+        <div class="mini-panel">
+          <span>Canal</span>
+          <strong>Desenvolvimento Web</strong>
+        </div>
+        <div class="mini-panel">
+          <span>Formação Atual</span>
+          <strong>Técnico em Informática para Internet — Senac</strong>
+        </div>
+        <div class="mini-panel">
+          <span>Projeto em Destaque</span>
+          <strong>ECOAR USP</strong>
+        </div>
+        <div class="mini-panel">
+          <span>Objetivo</span>
+          <strong>Primeira vaga como Dev Júnior</strong>
+        </div>
+      </aside>
     </div>
   </section>
 
-  <!-- =========================================================
-       SOBRE
-       ========================================================= -->
-  <section id="sobre" class="section">
+  <!-- SOBRE -->
+  <section id="sobre">
     <div class="container">
-      <div class="section-title">
-        <h2>Sobre mim</h2>
-        <p>Resumo profissional e objetivos na área de desenvolvimento.</p>
+      <div class="section-head">
+        <div>
+          <h2>Perfil</h2>
+          <p>Resumo profissional e direção de carreira.</p>
+        </div>
+        <div class="decor-line"></div>
       </div>
 
-      <div class="cards-grid">
-        <article class="card">
-          <h3>Resumo profissional</h3>
+      <div class="panel-grid">
+        <article class="panel">
+          <h3>Resumo Profissional</h3>
           <p>
-            Profissional em transição para a área de desenvolvimento web, com formação técnica
-            em andamento pelo Senac. Tenho conhecimentos em HTML5, CSS3, JavaScript, PHP,
-            MySQL, Flutter, Git e GitHub, além de experiência acadêmica no desenvolvimento
-            de aplicações web e integração com banco de dados.
+            Profissional em transição para a área de desenvolvimento web, com conhecimentos em HTML5, CSS3,
+            JavaScript, PHP, MySQL, Flutter, Git e GitHub. Experiência acadêmica em sistemas web, integração com
+            banco de dados e construção de interfaces.
           </p>
         </article>
 
-        <article class="card">
+        <article class="panel">
           <h3>Objetivo</h3>
           <p>
-            Busco minha primeira oportunidade como Desenvolvedor Web Júnior / Full Stack Júnior,
-            para aplicar meus conhecimentos em projetos reais, evoluir tecnicamente e construir
-            soluções úteis, funcionais e bem estruturadas.
+            Buscar oportunidade como Desenvolvedor Web Júnior / Full Stack Júnior, aplicando meus conhecimentos
+            em projetos reais, evoluindo tecnicamente e construindo soluções funcionais e bem estruturadas.
           </p>
         </article>
 
-        <article class="card">
-          <h3>Formação atual</h3>
+        <article class="panel">
+          <h3>Formação Atual</h3>
           <p>
-            <strong>Técnico em Informática para Internet — Senac</strong><br>
+            Técnico em Informática para Internet — Senac<br>
             Início: março de 2025<br>
             Conclusão prevista: julho de 2026
           </p>
         </article>
 
-        <article class="card">
+        <article class="panel">
           <h3>Diferenciais</h3>
-          <p>
-            Perfil comunicativo, analítico e orientado à resolução de problemas. Minha experiência
-            com atendimento ao cliente fortaleceu minha visão sobre usabilidade, clareza,
-            suporte e experiência do usuário.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================
-       TECNOLOGIAS
-       ========================================================= -->
-  <section id="tecnologias" class="section">
-    <div class="container">
-      <div class="section-title">
-        <h2>Tecnologias</h2>
-        <p>Stack principal e conhecimentos que venho desenvolvendo.</p>
-      </div>
-
-      <div class="cards-grid">
-        <article class="card">
-          <h3>Front-end</h3>
-          <ul class="list">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Responsive Design</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Back-end</h3>
-          <ul class="list">
-            <li>PHP</li>
-            <li>REST APIs</li>
-            <li>CRUD</li>
-            <li>Integração com banco de dados</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Banco de Dados</h3>
-          <ul class="list">
-            <li>MySQL</li>
-            <li>SQL</li>
-            <li>Modelagem de dados</li>
-            <li>Operações de consulta e manipulação</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Ferramentas</h3>
-          <ul class="list">
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Flutter</li>
-            <li>Organização de projetos</li>
+          <ul>
+            <li>Boa comunicação e visão de experiência do usuário</li>
+            <li>Resolução de problemas e foco em evolução técnica</li>
+            <li>Interesse em web, IoT, hardware e engenharia</li>
+            <li>Organização, disciplina e construção de portfólio</li>
           </ul>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- =========================================================
-       PROJETOS
-       ========================================================= -->
-  <section id="projetos" class="section">
+  <!-- TECNOLOGIAS -->
+  <section id="tecnologias">
     <div class="container">
-      <div class="section-title">
-        <h2>Projetos</h2>
-        <p>Projetos acadêmicos e práticos para portfólio.</p>
+      <div class="section-head">
+        <div>
+          <h2>Tecnologias</h2>
+          <p>Conhecimentos principais e stack atual.</p>
+        </div>
+        <div class="decor-line"></div>
       </div>
 
-      <div class="cards-grid">
-        <article class="card project-card">
-          <h3>Projeto Integrador — ECOAR USP</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Skills</h3>
+
+          <div class="skill">
+            <div class="skill-top"><span>HTML5</span><span>85%</span></div>
+            <div class="bar"><div class="fill" data-width="85%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top"><span>CSS3</span><span>80%</span></div>
+            <div class="bar"><div class="fill" data-width="80%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top"><span>JavaScript</span><span>75%</span></div>
+            <div class="bar"><div class="fill" data-width="75%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top"><span>PHP</span><span>70%</span></div>
+            <div class="bar"><div class="fill" data-width="70%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top"><span>MySQL</span><span>70%</span></div>
+            <div class="bar"><div class="fill" data-width="70%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top"><span>Flutter</span><span>55%</span></div>
+            <div class="bar"><div class="fill" data-width="55%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top"><span>Git / GitHub</span><span>60%</span></div>
+            <div class="bar"><div class="fill" data-width="60%"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Stack</h3>
+          <div class="tag-wrap">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Flutter</span>
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Responsive Design</span>
+            <span class="tag">CRUD</span>
+            <span class="tag">Web Services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Projetos</h2>
+          <p>Projetos acadêmicos e práticos para o portfólio.</p>
+        </div>
+        <div class="decor-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project">
+          <h3>ECOAR USP</h3>
           <p>
-            Desenvolvimento de aplicação web com HTML, CSS, JavaScript, PHP e MySQL, voltada
-            ao projeto ECOAR da USP, com foco em estruturação de conteúdo, banco de dados e
-            funcionalidades web.
+            Aplicação web desenvolvida no Projeto Integrador com HTML, CSS, JavaScript, PHP e MySQL, voltada para
+            apresentação de conteúdo, organização de informações e estruturação de funcionalidades web.
           </p>
-          <a href="#" class="project-link">Adicionar link do projeto</a>
+          <div class="project-links">
+            <a href="#">GitHub</a>
+            <a href="#">Ver projeto</a>
+          </div>
         </article>
 
-        <article class="card project-card">
+        <article class="project">
           <h3>Sistema para Frutaria</h3>
           <p>
-            Projeto de sistema web com cardápio, carrinho, cadastro de produtos e organização
-            de estrutura visual e funcional, utilizado como prática de front-end e lógica de aplicação.
+            Projeto com cardápio, carrinho, cadastro de produtos e estrutura de sistema web, aproveitando prática em
+            front-end, lógica de aplicação e organização visual.
           </p>
-          <a href="#" class="project-link">Adicionar link do GitHub</a>
+          <div class="project-links">
+            <a href="#">GitHub</a>
+            <a href="#">Ver projeto</a>
+          </div>
         </article>
 
-        <article class="card project-card">
+        <article class="project">
           <h3>API / CRUD em PHP</h3>
           <p>
-            Estrutura de back-end com PHP e MySQL para cadastro, listagem, edição e exclusão
-            lógica de registros, com foco em prática de API, banco de dados e organização de código.
+            Estrutura para cadastro, listagem, edição e exclusão lógica de registros com PHP e MySQL, com foco em
+            back-end, banco de dados e integração com front-end.
           </p>
-          <a href="#" class="project-link">Adicionar link do GitHub</a>
+          <div class="project-links">
+            <a href="#">GitHub</a>
+            <a href="#">Ver projeto</a>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- =========================================================
-       EXPERIÊNCIA
-       ========================================================= -->
-  <section id="experiencia" class="section">
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia">
     <div class="container">
-      <div class="section-title">
-        <h2>Experiência</h2>
-        <p>Experiência atual e competências transferíveis para tecnologia.</p>
+      <div class="section-head">
+        <div>
+          <h2>Experiência</h2>
+          <p>Formação e experiência com competências transferíveis para tecnologia.</p>
+        </div>
+        <div class="decor-line"></div>
       </div>
 
-      <div class="cards-grid">
-        <article class="card">
+      <div class="timeline">
+        <article class="timeline-item">
+          <span>Mar/2025 – Jul/2026</span>
+          <h3>Técnico em Informática para Internet — Senac</h3>
+          <p>
+            Formação focada em desenvolvimento web e mobile, com aprendizado em front-end, back-end, banco de dados,
+            APIs, documentação, testes e publicação de aplicações.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <span>Abr/2025 – Atual</span>
           <h3>Analista de Mídias Sociais Jr.</h3>
-          <p class="date">Abr/2025 – Atual</p>
-          <ul class="list">
-            <li>Atendimento ao cliente via chat com foco em solução de problemas</li>
-            <li>Suporte técnico relacionado a acesso, conectividade e uso da plataforma</li>
-            <li>Mediação de feedbacks e apoio à experiência do usuário</li>
-            <li>Comunicação clara, empatia e análise de situações de uso</li>
-          </ul>
+          <p>
+            Atuação com atendimento ao cliente via chat, apoio em resolução de problemas técnicos, análise de situações
+            de uso e mediação de feedbacks, fortalecendo comunicação, empatia e foco em solução.
+          </p>
         </article>
 
-        <article class="card">
-          <h3>Competências desenvolvidas</h3>
-          <ul class="list">
-            <li>Resolução de problemas</li>
-            <li>Comunicação com usuários</li>
-            <li>Organização e foco em entregas</li>
-            <li>Visão prática de usabilidade e experiência do usuário</li>
-          </ul>
+        <article class="timeline-item">
+          <span>Base</span>
+          <h3>Ensino Médio Completo</h3>
+          <p>
+            Formação concluída e atualmente complementada com qualificação técnica voltada à área de tecnologia.
+          </p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- =========================================================
-       CONTATO
-       ========================================================= -->
-  <section id="contato" class="section">
+  <!-- CONTATO -->
+  <section id="contato">
     <div class="container">
-      <div class="section-title">
-        <h2>Contato</h2>
-        <p>Links para networking e oportunidades.</p>
+      <div class="section-head">
+        <div>
+          <h2>Contato</h2>
+          <p>Links profissionais e canais para oportunidades.</p>
+        </div>
+        <div class="decor-line"></div>
       </div>
 
-      <div class="cards-grid">
-        <article class="card">
-          <h3>Informações</h3>
-          <ul class="list">
-            <li><strong>E-mail:</strong> marcosviniciusc.silva@yahoo.com.br</li>
-            <li><strong>Telefone:</strong> (11) 92012-8165</li>
-            <li><strong>Localização:</strong> São Paulo - SP</li>
-          </ul>
-        </article>
+      <div class="contact-box">
+        <div class="timeline-item contact-panel">
+          <h3>Canal Aberto</h3>
+          <p>
+            Estou em busca de oportunidade para iniciar na área de desenvolvimento. Posso compartilhar currículo em PDF,
+            GitHub e projetos conforme forem sendo publicados.
+          </p>
 
-        <article class="card">
-          <h3>Links</h3>
-          <ul class="list">
-            <li><a href="https://www.linkedin.com/in/marcos-carreiro-4abb295b" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/marcoscarreiro" target="_blank">GitHub</a></li>
-            <li><a href="https://wa.me/5511920128165" target="_blank">WhatsApp</a></li>
+          <div class="contact-links">
+            <a href="mailto:marcosviniciusc.silva@yahoo.com.br">E-mail</a>
+            <a href="https://www.linkedin.com/in/marcos-carreiro-4abb295b" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="https://wa.me/5511920128165" target="_blank">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="timeline-item contact-panel">
+          <h3>Informações</h3>
+          <ul>
+            <li>E-mail: marcosviniciusc.silva@yahoo.com.br</li>
+            <li>Telefone: (11) 92012-8165</li>
+            <li>Localização: São Paulo - SP</li>
+            <li>Objetivo: Desenvolvedor Web Júnior</li>
           </ul>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- =========================================================
-       RODAPÉ
-       ========================================================= -->
   <footer class="footer">
     <div class="container">
-      <p>© 2026 Marcos Vinicius Carreiro da Silva | Currículo em formato de site</p>
+      <p>© 2026 Marcos Vinicius Carreiro da Silva — Interface inspirada em sci-fi / Star Trek.</p>
     </div>
   </footer>
 
-</body>
-</html>
-          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </header>
-
-
-  <!-- =============================
-       JAVASCRIPT
-       ============================= -->
-
   <script src="assets/script.js"></script>
-
-   
 </body>
 </html>
