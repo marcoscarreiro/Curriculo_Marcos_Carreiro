@@ -1,4 +1,6 @@
 const terminal = document.getElementById("digitando-terminal");
+const fills = document.querySelectorAll(".fill");
+/* pega todas as barras */
 
 const linhas = [
   {
@@ -18,11 +20,23 @@ const linhas = [
 let linhaAtual = 0;
 let letraAtual = 0;
 
+function animarBarras() {
+  fills.forEach((fill) => {
+    fill.style.width = fill.dataset.width;
+    /* aplica a largura que está no data-width */
+  });
+}
+
 function digitarLinha() {
+  if (!terminal) return;
 
-  if (linhaAtual >= linhas.length) return;
+  if (linhaAtual >= linhas.length) {
+    animarBarras();
+    /* quando terminar toda a digitação, anima as barras */
+    return;
+  }
 
-  let linha = linhas[linhaAtual];
+  const linha = linhas[linhaAtual];
 
   if (letraAtual === 0) {
     const elemento = document.createElement("div");
@@ -33,23 +47,17 @@ function digitarLinha() {
   const elementoAtual = terminal.lastChild;
 
   if (letraAtual < linha.texto.length) {
-
     elementoAtual.textContent += linha.texto.charAt(letraAtual);
-
     letraAtual++;
-
     setTimeout(digitarLinha, 35);
-
   } else {
-
     elementoAtual.classList.remove("cursor");
-
     linhaAtual++;
     letraAtual = 0;
-
     setTimeout(digitarLinha, 400);
-
   }
 }
 
-digitarLinha();
+window.addEventListener("load", () => {
+  digitarLinha();
+});
